@@ -8,7 +8,6 @@ function mostrarMensajeExito() {
     document.getElementById('telefono').value = '';
     document.getElementById('correo').value = '';
     document.getElementById('asunto').value = '';
-    document.getElementById('mensaje').value = '';
 
     // Ocultar el mensaje después de 5 segundos (5000 ms)
     setTimeout(function() {
@@ -16,3 +15,10 @@ function mostrarMensajeExito() {
     }, 5000);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    var enviarBtn = document.getElementById('enviarBtn');
+    enviarBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevenir el comportamiento por defecto del formulario (si lo hubiera)
+        mostrarMensajeExito(); // Llamar a la función para mostrar el mensaje de éxito y limpiar el formulario
+    });
+});
