@@ -296,7 +296,7 @@ html{
     100%{width: 55%;}
 }
 
-.skills .skill .wordpress{
+.skills .skill .cmas{
     width: 0%;
     animation: 2s wordpress forwards;
 }
@@ -305,7 +305,7 @@ html{
     100%{width: 80%;}
 }
 
-.skills .skill .drupal{
+.skills .skill .java{
     width: 0%;
     animation: 2s drupal forwards;
 }
@@ -350,7 +350,7 @@ html{
     100%{width: 85%;}
 }
 
-.skills .skill .proyect{
+.skills .skill .puntualidad{
     width: 0%;
     animation: 2s proyect forwards;
 }
@@ -725,4 +725,19 @@ footer .arriba{
     padding: 10px 20px;
     border-radius: 5px;
     z-index: 999;
+}
+
+.mapa-responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* Proporción de aspecto 16:9 para el contenedor */
+}
+
+.mapa-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
